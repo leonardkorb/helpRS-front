@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  background-color: rgb(117, 117, 117);
+  height: 50px;
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  height: 100%;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  align-items: end;
+  text-align: end;
+  margin: 0;
+}
+
+header ul li {
+  margin: 0 10px;
+}
+
+header ul li a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: auto;
+  list-style: none;
+}
+
+section {
+  background: rgb(213, 213, 213);
+  padding: 20px;
+  border-radius: 20px;
+  margin: 15px auto;
+}
+
+section h2 {}
+
+section button {
+  background: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+  display: flex;
+  padding: 10px 20px;
+  margin: auto;
+  border-radius: 10px;
+}

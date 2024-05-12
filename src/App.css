@@ -2,45 +2,44 @@ body {
   margin: 0;
   padding: 0;
 }
+
+header .me-auto.navbar-nav {
+  margin-right: 0 !important;
+}
+
 main {
   max-width: 1200px;
   margin: auto;
+} 
+
+main form {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #e8e6e8;
+  border-radius: 20px;
+  padding: 40px;
 }
 
-header {
-  background-color: rgb(117, 117, 117);
-  height: 50px;
-}
-
-header div {
+main form h3 {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1200px;
+  margin: 0 auto 20px;
+  justify-content: center;
+}
+
+main form .btn {
+  display: flex;
   margin: auto;
-  height: 100%;
-  align-items: center;
 }
 
-header ul {
-  display: flex;
-  align-items: end;
-  text-align: end;
-  margin: 0;
-}
-
-header ul li {
-  margin: 0 10px;
-}
-
-header ul li a {
-  text-decoration: none;
-}
 
 ul {
   padding: 0;
   margin: auto;
   list-style: none;
+}
+
+:required {
+  border-color: red;
 }
 
 section {
@@ -52,6 +51,11 @@ section {
 
 section h2 {}
 
+.spinner-grow {
+  display: flex;
+  margin: auto;
+}
+
 section button {
   background: #000;
   color: #fff;
@@ -62,3 +66,31 @@ section button {
   margin: auto;
   border-radius: 10px;
 }
+
+
+
+.missings {}
+
+.missingpets .container-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+  margin: auto;
+  justify-content: center;
+}
+
+.missingpets .card {
+  margin: 8px;
+  width: 16rem !important;
+}
+
+.missingpets .card-img-top {
+  border-bottom: 1px solid #eeeeee;
+  min-height: 121px;
+  height: 100%;
+}
+
+.shelters {}
+
+.donations {}

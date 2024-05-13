@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Card, Button, Spinner, Table } from "react-bootstrap";
+import { Card, Button, Spinner, Table, Badge } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import '../../App.css';
 import NotPet from '../../images/notPet.png'
@@ -139,14 +139,20 @@ function Home() {
                   <thead>
                     <tr>
                       <th>Nome</th>
-                      <th>Cidade</th>
+                      <th>Instituição</th>
+                      <th>Pix</th>
+                      <th>link</th>
+                      <th>Confiavel</th>
                     </tr>
                   </thead>
                   <tbody>
                     {donations.map((missing: any) => (
                       <tr>
                         <td>{missing.nome}</td>
-                        <td>{missing.cidade}</td>
+                        <td>{missing.instituicao}</td>
+                        <td>{missing.chave_pix}</td>
+                        <td><a href={missing.link} target="_blank" rel="noopener noreferrer">Acessar</a></td>
+                        <td>{missing.validado ? <Badge bg="primary">Sim</Badge> : <Badge bg="warning">Não</Badge>}</td>
                       </tr>
                     ))}
                   </tbody>

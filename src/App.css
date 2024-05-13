@@ -49,7 +49,15 @@ section {
   margin: 15px auto;
 }
 
-section h2 {}
+.container_search {
+  display: flex;
+  margin: 10px auto;
+}
+
+.container_search .btn {
+
+  margin: auto 10px;
+}
 
 .spinner-grow {
   display: flex;

@@ -3,6 +3,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Logo from '../../images/logo.png'
 
 const Header = () => {
     let width = 0
@@ -19,7 +20,7 @@ const Header = () => {
         <header>
             <Navbar bg="dark" data-bs-theme="dark">
                 <Container >
-                    <Navbar.Brand href="/">Navbar</Navbar.Brand>
+                    <Navbar.Brand href="/"><img style={{ width: 70 }} src={Logo}/> HELP RS</Navbar.Brand>
                     <Nav className="me-auto">
                         <Nav.Link href="/list/missing">Desaparecidos</Nav.Link>
                         <Nav.Link href="/list/missingpets">Pets Desaparecidos</Nav.Link>

@@ -134,7 +134,7 @@ const Create = () => {
             setMensagemAlert("Preencha todos os campos")
         } else {
             setSendForm(false)
-            await fetch(`http://localhost:3001/${pathName}`, {
+            await fetch(`https://helprs-back.onrender.com/${pathName}`, {
                 method: "POST",
                 body: JSON.stringify(body)
             }).then((req) => {
